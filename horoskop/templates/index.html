@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Zdravo svete!</h1>
+    <h1>Zdravo Danijela! :)</h1>
+
+    <a href="{% url 'horoskop' znak='ovan' %}" class="btn">Ovan</a>
+    <a href="{% url 'horoskop' znak='blizanci' %}"  class="btn">Blizanci</a>
+    <a href="{% url 'horoskop' znak='vodolija' %}"  class="btn">Vodolija</a>
+
+
 {% endblock %}
