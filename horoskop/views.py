@@ -15,94 +15,120 @@ def index(requests):
 
 
 
-# def horoskop_view(request, znak):
-#     if znak == 'ovan':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'bik':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'blizanci':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'rak':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'lav':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'devica':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'vaga':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'skorpija':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'strelac':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'jarac':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'vodolija':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
-#     elif znak == 'ribe':
-#         dnevni = dnevni_horoskop(znak)
-#         nedeljni = nedeljni_horoskop(znak)
-#         mesecni = mesecni_horoskop(znak)
-#         godisnji = godisnji_horoskop(znak)
+def horoskop_view(request, znak):
+    if znak == 'ovan':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'bik':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'blizanci':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'rak':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'lav':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'devica':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'vaga':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'skorpija':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'strelac':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'jarac':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'vodolija':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
+    elif znak == 'ribe':
+        dnevni = dnevni_horoskop(znak)
+        nedeljni = nedeljni_horoskop(znak)
+        mesecni = mesecni_horoskop(znak)
+        godisnji = godisnji_horoskop(znak)
 
 
-#     horoskop, created = Horoskop.objects.get_or_create(
-#         znak=znak,
-#         dnevni=dnevni,
-#         nedeljni=nedeljni,
-#         mesecni=mesecni,
-#         godisnji=godisnji
-#     )
+    horoskop, created = Horoskop.objects.get_or_create(
+        znak=znak,
+        dnevni=dnevni,
+        nedeljni=nedeljni,
+        mesecni=mesecni,
+        godisnji=godisnji
+    )
 
-#     return render(request, 'horoskop.html', {
-#         # 'znak': znak,
-#         # 'dnevni': dnevni,
-#         # 'nedeljni': nedeljni,
-#         # 'mesecni': mesecni,
-#         # 'godisnji': godisnji,
+    return render(request, 'horoskop.html', {
+        # 'znak': znak,
+        # 'dnevni': dnevni,
+        # 'nedeljni': nedeljni,
+        # 'mesecni': mesecni,
+        # 'godisnji': godisnji,
 
-#         'horoskop': horoskop,
-#     })
+        'horoskop': horoskop,
+    })
 
 
 
-def horoskop_view(requests):
+# def horoskop_view(requests, znak):
 
-    # znakovi = Horoskop.objects.all()
+#     znakovi = Horoskop.objects.all()
 
-    context = {
+#     context = {
+#         'znakovi': znakovi,
+#         'znak': znak
+#     }
+#     return render(requests, 'horoskop.html', context)
 
-    }
-    return render(requests, 'horoskop.html', context)
+
+
+
+# def horoskop_view(requests, slug):
+
+#     if slug == 'ovan':
+#         dnevni = dnevni_horoskop(slug)
+#         nedeljni = nedeljni_horoskop(slug)
+#         mesecni = mesecni_horoskop(slug)
+#         godisnji = godisnji_horoskop(slug)
+
+    
+#     obj = Horoskop.objects.get(slug=slug)
+
+#     context = {
+#         'slug': slug,
+#         'dnevni': dnevni,
+#         'nedeljni': nedeljni,
+#         'mesecni': mesecni,
+#         'godisnji': godisnji,
+
+#         'obj': obj,
+#     }
+#     return render(requests, 'horoskop.html', context)
